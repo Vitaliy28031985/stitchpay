@@ -1,0 +1,27 @@
+Operations
+
+[
+  { id: 1, name: "Пошиття рукава", price: 25 },
+  { id: 2, name: "Обробка коміра", price: 15 },
+  { id: 3, name: "Встановлення блискавки", price: 30 },
+  { id: 4, name: "Підшивання низу", price: 20 },
+  { id: 5, name: "Пошиття кишені", price: 18 }
+];
+
+entries
+
+[
+    { id: 1, name: "Пошиття рукава", qty: 20, price: 25 },
+    { id: 2, name: "Обробка коміра", qty: 15, price: 15 },
+    { id: 3, name: "Встановлення блискавки", qty: 10, price: 30 }
+  ]
+
+Payments
+[
+  { id: 1, date: "2026-11-15", amount: 7000, kind: "Зарплата", comment: "Виплата за першу половину місяця" },
+  { id: 2, date: "2026-11-05", amount: 6000, kind: "Аванс", comment: "Аванс" },
+  { id: 3, date: "2026-11-01", amount: 5000, kind: "Зарплата", comment: "Попередня виплата" }
+];
+
+//  NEXT_PUBLIC_SUPABASE_URL=https://cvhrqcjodhosyvuvuwxi.supabase.co
+// NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_secret_qTXtMO7xOKiZUuemh2F2Cw_ek-m3s5r
