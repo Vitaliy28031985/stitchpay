@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { dashboardNavigation } from '@/shared/config/navigation';
 import { BrandMark } from '@/shared/ui/brand-mark';
-import { UserAvatar } from '@/entities/user/ui/user-avatar';
+// import { UserAvatar } from '@/entities/user/ui/user-avatar';
 import { SignOutButton } from '@/features/auth/ui/sign-out-button';
 
 interface SidebarProps { currentPath: string; }
@@ -19,8 +19,8 @@ export function Sidebar({ currentPath }: SidebarProps) {
       </nav>
       <div className="mt-auto rounded-2xl bg-white/10 p-4">
         <div className="flex items-center gap-3">
-          <UserAvatar className="bg-blue-300 text-blue-950" />
-          <div><p className="text-sm font-semibold">Олена Швачка</p><p className="text-xs text-blue-200">Особистий кабінет</p></div>
+          {/* <UserAvatar className="bg-blue-300 text-blue-950" />
+          <div><p className="text-sm font-semibold">Олена Швачка</p><p className="text-xs text-blue-200">Особистий кабінет</p></div> */}
         </div>
         <SignOutButton />
       </div>

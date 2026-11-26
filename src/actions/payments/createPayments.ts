@@ -18,9 +18,9 @@ export async function createPayment(paymentData: CreatePaymentData ): Promise<Pa
       }
     
       // 2. Перевіряємо вхідні дані
-      if (typeof paymentData.comment !== "string" || !paymentData.comment.trim()) {
-        throw new Error("Введіть коментар!");
-      }
+      // if (typeof paymentData.comment !== "string" || !paymentData.comment.trim()) {
+      //   throw new Error("Введіть коментар!");
+      // }
     
       if (
         typeof paymentData.amount !== "number" ||

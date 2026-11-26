@@ -106,11 +106,13 @@ export async function middleware(request: NextRequest) {
 
   return supabaseResponse;
 }
-
 // Вказуємо, які сторінки потрібно захищати
 export const config = {
   matcher: [
     "/dashboard/:path*",
     "/work/:path*",
+    "/operations/:path*",
+    "/payments/:path*",
+    "/settings/:path*",
   ],
 };

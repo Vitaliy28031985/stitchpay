@@ -42,7 +42,8 @@ export function DashboardOverview() {
   return (
     <>
       <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
-        <div><p className="text-sm text-slate-500">Вітаємо, Олено! 👋</p>
+        <div>
+          {/* <p className="text-sm text-slate-500">Вітаємо, Олено! 👋</p> */}
           <h2 className="mt-1 text-2xl font-bold text-slate-900">Ваші результати</h2>
         </div>
 

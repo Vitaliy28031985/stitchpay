@@ -13,10 +13,11 @@ export default function CreateWork() {
     const [date, setDate] = useState(createCurrentDate());
     const [operation, setOperation] = useState(data[0]?.id);
     const [qty, setQty] = useState("1");
+     const [model, setModel] = useState('');
 
     const selectedOperation = data.find(
        (item) => String(item.id) === operation
-  );
+     );
   
   function createCurrentDate() {
   const now = new Date();
@@ -56,6 +57,10 @@ export default function CreateWork() {
         <div>
           <label className="mb-1 block text-xs font-semibold text-slate-600">Кількість</label>
           <input className="field" type="number" min="1" value={qty} onChange={e => setQty(e.target.value)} />
+          </div>
+        <div>
+          <label className="mb-1 block text-xs font-semibold text-slate-600">Модель</label>
+          <input className="field" type="text"  value={model} onChange={e => setModel(e.target.value)} />
         </div>
         <div>
           <label className="mb-1 block text-xs font-semibold text-slate-600">Ціна за одиницю</label>
@@ -71,11 +76,12 @@ export default function CreateWork() {
                 </b>
                 </p><button className="btn-primary" onClick={async () => {
                     createEntry({
-                        date: new Date(`${date}T00:00:00.000Z`), name: selectedOperation?.name ?? '', qty: Number(qty ?? 0), price: Number(selectedOperation?.price)
+                        date: new Date(`${date}T00:00:00.000Z`), model: model ?? '', name: selectedOperation?.name ?? '', qty: Number(qty ?? 0), price: Number(selectedOperation?.price)
                     });
                     setDate(createCurrentDate());
                     setOperation('');
                     setQty('1');
+                    setModel('');
         }}><Plus size={17} /> Додати запис</button>
       </div>
     </section>

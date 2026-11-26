@@ -20,6 +20,6 @@ export const dashboardNavigation: NavigationItem[] = [
   { href: '/operations', label: 'Мої операції', shortLabel: 'Операції', icon: Scissors },
   { href: '/work', label: 'Облік роботи', shortLabel: 'Робота', icon: CalendarDays },
   { href: '/payments', label: 'Мої виплати', shortLabel: 'Виплати', icon: Wallet },
-  { href: '/analytics', label: 'Аналітика', shortLabel: 'Аналітика', icon: ChartNoAxesCombined },
-  { href: '/settings', label: 'Налаштування', shortLabel: 'Налаштування', icon: Settings },
+  // { href: '/analytics', label: 'Аналітика', shortLabel: 'Аналітика', icon: ChartNoAxesCombined },
+  // { href: '/settings', label: 'Налаштування', shortLabel: 'Налаштування', icon: Settings },
 ];

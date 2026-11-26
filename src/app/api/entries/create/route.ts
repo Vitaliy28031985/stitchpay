@@ -36,6 +36,7 @@ export async function POST(request: Request) {
       name: body.name,
       price: body.price,
       qty: body.qty,
+      model: body.model,
       date,
     };
 

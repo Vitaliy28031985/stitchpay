@@ -2,6 +2,7 @@ export interface CreateEntryData {
   name: string;
   price: number;
   qty: number;
+  model: string;
   date: Date;
 }
 
@@ -12,6 +13,7 @@ export interface Entry {
   qty: number;
   date: string;
   result: number;
+  model: string;
   sequence_number: number;
   owner_id: string;
   created_at: string;
@@ -25,6 +27,7 @@ export interface EntriesResponse {
 
 export interface PopularOperation {
   name: string;
+  model: string;
   count: number;
   progress: number;
 }

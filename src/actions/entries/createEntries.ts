@@ -78,6 +78,7 @@ export async function createEntries(
       name: data.name.trim(),
       price: data.price,
       qty: data.qty,
+      model: data.model,
       date,
       sequence_number: nextSequenceNumber,
     })
